@@ -20,7 +20,7 @@ function onEdit(e) {
      See - https://developers.google.com/apps-script/guides/triggers/events
     */
   var editedCell = e.range; //editedCell now has cell reference via e event object property range.
-    // var cellValue = e.value;
+   
   var ss = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
   var currentRow = editedCell.getRow();
   var currentCol = editedCell.getColumn();
@@ -30,7 +30,7 @@ function onEdit(e) {
   
   // Check for CalID in row and edit cell and update Calendar event if ID present
   if (calEventId == "") {
-    return Logger.log("No Calendar Event ID Present");;
+    return Logger.log("No Calendar Event ID Present");
   } 
   else {
     var calId = "scarsdaleschools.org_4mlv8k2irsd7ina5bq3o65i4i8@group.calendar.google.com";

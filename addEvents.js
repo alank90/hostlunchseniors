@@ -9,8 +9,11 @@ function addEvents() {
   // ================================================================================================ //
   // ================================================================================================ //
 
-  // Important!!! - This function is deprecated! See addRow() does the task of adding a calendar event 
-  // from SS via user input of ropw to be added.
+  // Important!!! - This function is deprecated! See addRow() and onFormSubmit do the task of adding a calendar event 
+  // from SS or form submission to the Calendar. It can be deleted!!
+
+  // ================================================================================================ //
+  // ================================================================================================ //
 
   // Initialize Variables
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
