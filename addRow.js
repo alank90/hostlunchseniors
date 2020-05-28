@@ -64,7 +64,6 @@ function addRow(userInput) {
     eventCal.createEvent(title, startTime, endTime, event);
   } else {
     // Creates a rule that recurs every week.
-    Logger.log(startEndTime);
     var recurrence = CalendarApp.newRecurrence().addWeeklyRule().until(endTime);
     eventCal.createEventSeries(
       title,
