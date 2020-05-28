@@ -100,7 +100,6 @@ function addRow(userInput) {
       title === currentTitle &&
       timeStamp.getTime() === currentTimeStamp.getTime()
     ) {
-      Logger.log("Im in eventId");
       eventId = element.getId();
 
       // Finally, set the calendarEventID value in the appropriate SS cell.
