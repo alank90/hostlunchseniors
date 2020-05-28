@@ -1,10 +1,11 @@
 
 // ************************************* Function onEdit() *********************************** //
-function onEdit(e) {
+function onEdit_Disabled(e) {
   // This function is executed by an Installable Trigger setup on the onEdit() script.
   // When someone edits a cell the function is called and values needed for
   // updating the row are retrieved and then a command is issued to update
   // the proper event in the Calendar.
+  // To enable remove the suffix _Disabled from the function name.
 
   /* 
      Installable triggers let Apps Script run a function automatically when 
